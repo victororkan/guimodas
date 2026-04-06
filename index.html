@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== SEO & META ===== -->
+    <title>Gui Modas</title>
+    <meta name="description" content="O melhor do Brás sem você sair de casa. Peças selecionadas, atendimento direto e envio rápido. Gui Modas - moda com curadoria e confiança.">
+    <meta name="keywords" content="moda, Brás, roupas, atacado, varejo, Gui Modas, São Paulo, moda feminina, moda masculina">
+    <meta name="author" content="Gui Modas">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gui Modas - O Melhor do Brás">
+    <meta property="og:description" content="Peças selecionadas, atendimento direto e envio rápido. Sem enrolação.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gui Modas - O Melhor do Brás">
+    <meta name="twitter:description" content="Peças selecionadas, atendimento direto e envio rápido.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== PARTICLE CANVAS (Background Effect) ===== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header id="header" class="header">
+        <div class="header-inner container">
+            <!-- Logo -->
+            <a href="#hero" class="logo" id="logo">
+                <img src="logo.png" alt="Gui Modas Logo" class="logo-img">
+                <span class="logo-text">GUI<span class="logo-accent">MODAS</span></span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop" id="nav-desktop">
+                <a href="#hero" class="nav-link">Início</a>
+                <a href="#problema" class="nav-link">Problema</a>
+                <a href="#solucao" class="nav-link">Solução</a>
+                <a href="#diferencial" class="nav-link">Diferencial</a>
+                <a href="#como-funciona" class="nav-link">Como Funciona</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+            </nav>
+            
+            <!-- CTA Button -->
+            <a href="https://wa.me/5511951791234?text=Ol%C3%A1%21%20Quero%20ver%20as%20pe%C3%A7as%20dispon%C3%ADveis" 
+               class="btn btn-header" target="_blank" rel="noopener" id="header-cta">
+                <span class="btn-icon">💬</span> WhatsApp
+            </a>
+            
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav" id="mobile-nav">
+            <nav class="mobile-nav-inner">
+                <a href="#hero" class="mobile-nav-link">Início</a>
+                <a href="#problema" class="mobile-nav-link">Problema</a>
+                <a href="#solucao" class="mobile-nav-link">Solução</a>
+                <a href="#diferencial" class="mobile-nav-link">Diferencial</a>
+                <a href="#como-funciona" class="mobile-nav-link">Como Funciona</a>
+                <a href="#depoimentos" class="mobile-nav-link">Depoimentos</a>
+                <a href="https://wa.me/5511951791234?text=Ol%C3%A1%21%20Quero%20ver%20as%20pe%C3%A7as%20dispon%C3%ADveis" 
+                   class="btn btn-primary mobile-nav-cta" target="_blank" rel="noopener">
+                    FALAR NO WHATSAPP
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-badge reveal" data-delay="0">
+                <span class="badge-dot"></span>
+                CURADORIA EXCLUSIVA DO BRÁS
+            </div>
+            <h1 class="hero-title reveal" data-delay="100">
+                O Melhor do Brás,<br>
+                <span class="gradient-text">Sem Você Sair de Casa</span>
+            </h1>
+            <p class="hero-subtitle reveal" data-delay="200">
+                Peças selecionadas, atendimento direto e envio rápido.<br>
+                Sem enrolação. Sem risco. Só o que realmente vende.
+            </p>
+            <div class="hero-cta-group reveal" data-delay="300">
+                <a href="https://wa.me/5511951791234?text=Ol%C3%A1%21%20Quero%20ver%20as%20pe%C3%A7as%20dispon%C3%ADveis" 
+                   class="btn btn-primary btn-lg" target="_blank" rel="noopener" id="hero-cta-whatsapp">
+                    <span class="btn-icon">👉</span> QUERO VER AS PEÇAS
+                </a>
+                <a href="https://wa.me/5511951791234?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20saber%20mais" 
+                   class="btn btn-outline btn-lg" target="_blank" rel="noopener" id="hero-cta-falar">
+                    <span class="btn-icon">💬</span> FALAR NO WHATSAPP
+                </a>
+            </div>
+            <div class="hero-stats reveal" data-delay="400">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>+
+                    <span class="stat-label">Peças disponíveis</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>%
+                    <span class="stat-label">Clientes satisfeitos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span>h
+                    <span class="stat-label">Envio rápido</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Role para baixo</span>
+        </div>
+    </section>
+
+    <!-- ===== PROBLEMA (Emotional Connection) ===== -->
+    <section id="problema" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">⚡ O PROBLEMA</span>
+                <h2 class="section-title">Quem já tentou comprar<br>no Brás <span class="text-red">sabe...</span></h2>
+                <p class="section-subtitle">A frustração de quem precisa de peças de qualidade mas não encontra confiança.</p>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card glass-card reveal" data-delay="0">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Perde tempo</h3>
+                    <p>Com fornecedor ruim que não entrega o que promete</p>
+                </div>
+                <div class="problem-card glass-card reveal" data-delay="100">
+                    <div class="problem-icon">📉</div>
+                    <h3>Qualidade inconsistente</h3>
+                    <p>Peças que não correspondem às fotos ou expectativas</p>
+                </div>
+                <div class="problem-card glass-card reveal" data-delay="200">
+                    <div class="problem-icon">🔇</div>
+                    <h3>Falta de resposta</h3>
+                    <p>Fornecedores que somem depois do pagamento</p>
+                </div>
+                <div class="problem-card glass-card reveal" data-delay="300">
+                    <div class="problem-icon">⚠️</div>
+                    <h3>Golpes e insegurança</h3>
+                    <p>Medo de ser enganado e perder dinheiro</p>
+                </div>
+                <div class="problem-card glass-card reveal" data-delay="400">
+                    <div class="problem-icon">🐌</div>
+                    <h3>Demora absurda</h3>
+                    <p>Prazos que nunca são cumpridos</p>
+                </div>
+            </div>
+            
+            <div class="problem-conclusion reveal">
+                <p class="conclusion-text">👉 E no final... <span class="text-red text-bold">frustração.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOLUÇÃO (Positioning) ===== -->
+    <section id="solucao" class="section section-gradient">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🚀 A SOLUÇÃO</span>
+                <h2 class="section-title">Eu resolvo isso <span class="text-green">pra você.</span></h2>
+                <p class="section-subtitle">Chega de dor de cabeça. Com a Gui Modas, você compra com segurança e recebe no conforto da sua casa.</p>
+            </div>
+            
+            <div class="solution-grid">
+                <div class="solution-card reveal" data-delay="0">
+                    <div class="solution-check">✔️</div>
+                    <div class="solution-content">
+                        <h3>Seleção das melhores peças</h3>
+                        <p>Curadoria rigorosa para você ter só o melhor</p>
+                    </div>
+                </div>
+                <div class="solution-card reveal" data-delay="100">
+                    <div class="solution-check">✔️</div>
+                    <div class="solution-content">
+                        <h3>Contato direto</h3>
+                        <p>Sem intermediário, sem burocracia</p>
+                    </div>
+                </div>
+                <div class="solution-card reveal" data-delay="200">
+                    <div class="solution-check">✔️</div>
+                    <div class="solution-content">
+                        <h3>Atendimento rápido</h3>
+                        <p>Resposta ágil e personalizada pra você</p>
+                    </div>
+                </div>
+                <div class="solution-card reveal" data-delay="300">
+                    <div class="solution-check">✔️</div>
+                    <div class="solution-content">
+                        <h3>Envio ágil</h3>
+                        <p>Suas peças chegam rapidinho na sua porta</p>
+                    </div>
+                </div>
+                <div class="solution-card reveal" data-delay="400">
+                    <div class="solution-check">✔️</div>
+                    <div class="solution-content">
+                        <h3>Compra segura</h3>
+                        <p>Transparência total em todo o processo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="solution-highlight reveal">
+                <p class="highlight-text">Você só escolhe. <span class="text-green text-bold">Eu cuido do resto.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DIFERENCIAL (Authority) ===== -->
+    <section id="diferencial" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🧲 DIFERENCIAL</span>
+                <h2 class="section-title">Não é só venda.<br><span class="gradient-text">É curadoria.</span></h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card glass-card reveal" data-delay="0">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🤝</div>
+                    </div>
+                    <h3>Fornecedores confiáveis</h3>
+                    <p>Trabalho apenas com fornecedores verificados e de confiança comprovada.</p>
+                </div>
+                <div class="feature-card glass-card reveal" data-delay="100">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🔥</div>
+                    </div>
+                    <h3>Peças com alto giro</h3>
+                    <p>Escolho peças que realmente vendem — com base em tendência e demanda real.</p>
+                </div>
+                <div class="feature-card glass-card reveal" data-delay="200">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">💰</div>
+                    </div>
+                    <h3>Qualidade + Preço competitivo</h3>
+                    <p>O melhor custo-benefício sem comprometer a qualidade.</p>
+                </div>
+                <div class="feature-card glass-card reveal" data-delay="300">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">💎</div>
+                    </div>
+                    <h3>Atendimento personalizado</h3>
+                    <p>Cada cliente é único. Cada pedido é tratado com atenção especial.</p>
+                </div>
+            </div>
+            
+            <div class="differentiator-cta reveal">
+                <p>👉 Aqui você <span class="text-green text-bold">não perde dinheiro.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA (Clarity) ===== -->
+    <section id="como-funciona" class="section section-gradient">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🛍️ COMO FUNCIONA</span>
+                <h2 class="section-title">Simples <span class="text-green">assim.</span></h2>
+                <p class="section-subtitle">Em poucos passos, suas peças favoritas estão a caminho.</p>
+            </div>
+            
+            <div class="steps-timeline">
+                <div class="step-card reveal" data-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Você escolhe as peças</h3>
+                        <p>Navegue pelo catálogo e selecione o que mais combina com você.</p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-card reveal" data-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Fala direto comigo</h3>
+                        <p>Sem robô, sem espera. Atendimento humano e personalizado.</p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-card reveal" data-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Recebe atendimento rápido</h3>
+                        <p>Tiro suas dúvidas e confirmo tudo rapidamente.</p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-card reveal" data-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Finaliza com segurança</h3>
+                        <p>Processo transparente e seguro do início ao fim.</p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-card reveal" data-delay="400">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Recebe no conforto da sua casa</h3>
+                        <p>Entrega rápida direto na sua porta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS (Social Proof) ===== -->
+    <section id="depoimentos" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">💬 DEPOIMENTOS</span>
+                <h2 class="section-title">Quem comprou, <span class="text-green">aprovou.</span></h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card reveal" data-delay="0">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Comprei e chegou super rápido, qualidade muito acima do esperado."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <strong>Maria S.</strong>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal" data-delay="100">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Atendimento rápido, sem enrolação. Já virei cliente."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J</div>
+                        <div>
+                            <strong>João R.</strong>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal" data-delay="200">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Finalmente alguém confiável no Brás. Recomendo de olhos fechados!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <strong>Ana P.</strong>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== URGÊNCIA (Urgency Trigger) ===== -->
+    <section class="section section-urgency">
+        <div class="container">
+            <div class="urgency-content reveal">
+                <div class="urgency-icon">⏳</div>
+                <h2 class="urgency-title">Peças com alta saída — <span class="text-red">estoque limitado</span></h2>
+                <p class="urgency-text">Quem chega primeiro, leva. Não perca a oportunidade de garantir as melhores peças.</p>
+                <div class="urgency-badges">
+                    <span class="urgency-badge">🔥 Alta demanda</span>
+                    <span class="urgency-badge">⚡ Estoque limitado</span>
+                    <span class="urgency-badge">📦 Envio imediato</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA FINAL (Conversion) ===== -->
+    <section id="cta-final" class="section section-cta">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 class="cta-title">Bora <span class="gradient-text">fechar?</span></h2>
+                <p class="cta-text">Me chama agora e eu te mostro as melhores peças disponíveis hoje.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5511951791234?text=Ol%C3%A1%21%20Quero%20fechar%20um%20pedido" 
+                       class="btn btn-primary btn-xl" target="_blank" rel="noopener" id="cta-final-whatsapp">
+                        <span class="btn-icon">💬</span> CHAMAR NO WHATSAPP
+                    </a>
+                    <a href="https://wa.me/5511951791234?text=Ol%C3%A1%21%20Quero%20ver%20o%20cat%C3%A1logo" 
+                       class="btn btn-outline btn-xl" target="_blank" rel="noopener" id="cta-final-catalogo">
+                        <span class="btn-icon">📋</span> VER CATÁLOGO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo footer-logo">
+                        <img src="logo.png" alt="Gui Modas" class="logo-img">
+                        <span class="logo-text">GUI<span class="logo-accent">MODAS</span></span>
+                    </a>
+                    <p class="footer-desc">O melhor do Brás, direto pra você. Moda com curadoria, confiança e atendimento direto.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="#hero">Início</a>
+                    <a href="#problema">Problema</a>
+                    <a href="#solucao">Solução</a>
+                    <a href="#diferencial">Diferencial</a>
+                    <a href="#como-funciona">Como Funciona</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <a href="https://wa.me/5511951791234" target="_blank" rel="noopener">📱 WhatsApp</a>
+                    <p>📍 Brás - São Paulo, SP</p>
+                    <p>🚚 Envios para todo Brasil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gui Modas. Todos os direitos reservados.</p>
+                <p>Feito com ❤️ para quem quer moda de qualidade</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <a href="https://wa.me/5511951791234?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20saber%20mais" 
+       class="whatsapp-float" target="_blank" rel="noopener" id="whatsapp-float" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
+            <path d="M16.004 0h-.008C7.174 0 .002 7.174.002 16.002c0 3.502 1.14 6.742 3.064 9.372L.556 31.666l6.542-2.442c2.504 1.704 5.54 2.704 8.906 2.704 8.826 0 15.998-7.174 15.998-16.002C32.002 7.1 24.83 0 16.004 0zm9.53 22.606c-.396 1.116-2.312 2.062-3.222 2.166-.82.094-1.856.134-2.996-.188a27.378 27.378 0 01-2.71-1.004c-4.77-2.058-7.884-6.896-8.124-7.216-.234-.314-1.908-2.54-1.908-4.846 0-2.312 1.21-3.444 1.638-3.918.428-.472.934-.59 1.246-.59.312 0 .624.002.898.016.288.016.674-.11 1.054.804.396.95 1.342 3.266 1.46 3.502.118.234.198.512.04.826-.156.314-.236.512-.47.786-.234.276-.494.618-.706.83-.234.234-.478.488-.206.958.276.468 1.224 2.022 2.63 3.274 1.81 1.614 3.336 2.114 3.808 2.352.468.234.744.198 1.018-.118.276-.314 1.176-1.37 1.49-1.844.314-.468.628-.39 1.058-.234.432.156 2.748 1.296 3.216 1.53.468.234.782.354.898.548.118.198.118 1.124-.276 2.236z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Fale conosco!</span>
+    </a>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
